@@ -10,11 +10,7 @@ set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 enable_testing()
 
 add_subdirectory(googletest)
+add_subdirectory(src)
 
-set(Sources
-    DisplayPage.cpp
-)
-
-add_library(${This} STATIC ${Sources})
 
 add_subdirectory(test)
