@@ -1,3 +1,9 @@
 Testing/*
 build/*
 .vscode/*
+**/CMakeCache.txt
+**/CTestTestfile.cmake
+**/CMakeFiles
+**/cmake_install.cmake
+**/Makefile
+**/generated

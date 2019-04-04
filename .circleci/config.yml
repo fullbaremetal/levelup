@@ -6,11 +6,33 @@ jobs:
 
     steps:
       - checkout
-
       - run:
-          name: cmake build
-          command: cmake .
-
+          name: Installing SUDO
+          command: 'apt-get update && apt-get install -y sudo && rm -rf /var/lib/apt/lists/*'
       - run:
-          name: test
-          command: ctest
+          name: Installing GCC
+          command: 'apt-get update && apt-get install -y gcc g++ curl make'
+      - run:
+          name: Install CMAKE
+          command: |
+                  curl -L -o /tmp/cmake-3.14.1-Linux-x86_64.tgz https://github.com/Kitware/CMake/releases/download/v3.14.1/cmake-3.14.1-Linux-x86_64.tar.gz
+                  tar -xz -C /tmp -f /tmp/cmake-3.14.1-Linux-x86_64.tgz
+                  cd /tmp/cmake-3.14.1-Linux-x86_64
+                  sudo cp -r bin /usr/
+                  sudo cp -r share /usr/
+                  sudo cp -r doc /usr/share/
+                  sudo cp -r man /usr/share/
+                  cd ..
+                  sudo rm -rf cmake-3.14.1-Linux-x86_64
+                  sudo rm cmake-3.14.1-Linux-x86_64.tgz
+                  cd ~/project
+
+                  
+      - run:
+          name: build and test
+          command: |
+                mkdir build
+                cd build
+                cmake ../
+                make
+                make test
