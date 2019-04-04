@@ -4,6 +4,7 @@ set(This leveluptests)
 
 set(Sources
     DisplayPageTests.cpp
+    FileSystemTests.cpp
 )
 
 add_executable(${This} ${Sources})

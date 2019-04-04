@@ -1,7 +1,13 @@
 set(This airbnb)
 
-set(Sources
-    DisplayPage.cpp
+set(Headers
+    DisplayPage.hpp
+    FileSystem.hpp
 )
 
-add_library(${This} STATIC ${Sources})
+set(Sources
+    DisplayPage.cpp
+    FileSystem.cpp
+)
+
+add_library(${This} STATIC ${Sources} ${Headers})
