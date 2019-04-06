@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 #include <vector>
-#include<gmock/gmock.h>
+#include <gmock/gmock.h>
 
 #include "../src/airbnb/DisplayPage.hpp"
 
