@@ -1,6 +1,6 @@
 #include "FileSystem.hpp"
 #include <sstream>
-#include<iostream>
+#include <iostream>
 
 Node::Node(int v) {
     val=v;

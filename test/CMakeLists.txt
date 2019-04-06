@@ -5,6 +5,10 @@ set(This leveluptests)
 set(Sources
     DisplayPageTests.cpp
     FileSystemTests.cpp
+    LogStorageTests.cpp
+    MedianFromStreamTests.cpp
+    InsertIntervalTests.cpp
+    AlienDictionaryTests.cpp
 )
 
 add_executable(${This} ${Sources})
@@ -12,6 +16,7 @@ target_link_libraries(${This} PUBLIC
     gtest_main
     gmock
     airbnb
+    twitter
 )
 
 add_test(
