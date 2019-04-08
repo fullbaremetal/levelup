@@ -10,6 +10,7 @@ set(Sources
     InsertIntervalTests.cpp
     AlienDictionaryTests.cpp
     CheapestFlightWithInKStopsTests.cpp
+    IPToCIDRTests.cpp
 )
 
 add_executable(${This} ${Sources})

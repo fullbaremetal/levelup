@@ -5,6 +5,7 @@ set(Headers
     FileSystem.hpp
     AlienDictionary.hpp
     CheapestFlightWithInKStops.hpp
+    IPToCIDR.hpp
 )
 
 set(Sources
@@ -12,6 +13,7 @@ set(Sources
     FileSystem.cpp
     AlienDictionary.cpp
     CheapestFlightWithInKStops.cpp
+    IPToCIDR.cpp
 )
 
 add_library(${This} STATIC ${Sources} ${Headers})
