@@ -12,6 +12,7 @@ set(Sources
     CheapestFlightWithInKStopsTests.cpp
     IPToCIDRTests.cpp
     EmployeeFreeTimeTests.cpp
+    AutoCompleteSystemTests.cpp
 )
 
 add_executable(${This} ${Sources})
@@ -20,6 +21,7 @@ target_link_libraries(${This} PUBLIC
     gmock
     airbnb
     twitter
+    amazon
 )
 
 add_test(
