@@ -1,7 +1,6 @@
 #include<string>
 #include<map>
 #include<set>
-#include<iostream>
 
 #include "AlienDictionary.hpp"
 
@@ -23,7 +22,6 @@ string AlienDictionary::alienOrder(vector<string> words) {
         if(i==words.size()-1)continue;
         for(int j=0;j<words[i].size() && j<words[i+1].size();j++) {
             if(words[i][j]==words[i+1][j]) continue;
-            cout<<words[i][j]<<" "<<words[i+1][j]<<endl;
             g[words[i][j]].push_back(words[i+1][j]);
             in[words[i+1][j]]++;
             break;

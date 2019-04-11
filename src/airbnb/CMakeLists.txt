@@ -7,6 +7,7 @@ set(Headers
     CheapestFlightWithInKStops.hpp
     IPToCIDR.hpp
     EmployeeFreeTime.hpp
+    QueueWithFixedArrays.hpp
 )
 
 set(Sources
@@ -16,6 +17,7 @@ set(Sources
     CheapestFlightWithInKStops.cpp
     IPToCIDR.cpp
     EmployeeFreeTime.cpp
+    QueueWithFixedArrays.cpp
 )
 
 add_library(${This} STATIC ${Sources} ${Headers})

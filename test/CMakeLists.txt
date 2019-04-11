@@ -13,6 +13,7 @@ set(Sources
     IPToCIDRTests.cpp
     EmployeeFreeTimeTests.cpp
     AutoCompleteSystemTests.cpp
+    QueueWithFixedArraysTests.cpp
 )
 
 add_executable(${This} ${Sources})
