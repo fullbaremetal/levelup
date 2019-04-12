@@ -14,6 +14,7 @@ set(Sources
     EmployeeFreeTimeTests.cpp
     AutoCompleteSystemTests.cpp
     QueueWithFixedArraysTests.cpp
+    CutoffTreesForGolfEventTests.cpp
 )
 
 add_executable(${This} ${Sources})
