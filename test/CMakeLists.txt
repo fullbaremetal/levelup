@@ -16,6 +16,7 @@ set(Sources
     QueueWithFixedArraysTests.cpp
     CutoffTreesForGolfEventTests.cpp
     MaxFreqStackTests.cpp
+    SerializeAndDeserialzieBinaryTreeTests.cpp
 )
 
 add_executable(${This} ${Sources})
