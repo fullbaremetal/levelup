@@ -15,6 +15,7 @@ set(Sources
     AutoCompleteSystemTests.cpp
     QueueWithFixedArraysTests.cpp
     CutoffTreesForGolfEventTests.cpp
+    MaxFreqStackTests.cpp
 )
 
 add_executable(${This} ${Sources})
