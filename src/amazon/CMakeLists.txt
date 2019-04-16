@@ -1,17 +1,7 @@
 set(This amazon)
 
-set(Headers
-    AutoCompleteSystem.hpp
-    CutoffTreesForGolfEvent.hpp
-    MaxFreqStack.hpp
-    SerializeAndDeserialzieBinaryTree.hpp
-)
+File(GLOB Headers *.hpp)
 
-set(Sources
-    AutoCompleteSystem.cpp
-    CutoffTreesForGolfEvent.cpp
-    MaxFreqStack.cpp
-    SerializeAndDeserialzieBinaryTree.cpp
-)
+File(GLOB Sources *.cpp)
 
-add_library(${This} STATIC ${Sources} ${Headers})
+ADD_LIBRARY(${This} STATIC ${Sources} ${Headers})

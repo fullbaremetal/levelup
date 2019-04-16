@@ -17,6 +17,7 @@ set(Sources
     CutoffTreesForGolfEventTests.cpp
     MaxFreqStackTests.cpp
     SerializeAndDeserialzieBinaryTreeTests.cpp
+    FindMedianInLargeFileTests.cpp
 )
 
 add_executable(${This} ${Sources})

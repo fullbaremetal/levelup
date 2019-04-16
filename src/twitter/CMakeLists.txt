@@ -1,15 +1,7 @@
 set(This twitter)
 
-set(Headers
-    LogStorage.hpp
-    MedianFromStream.hpp
-    InsertInterval.hpp
-)
+File(GLOB Headers *.hpp)
 
-set(Sources
-    LogStorage.cpp
-    MedianFromStream.cpp
-    InsertInterval.cpp
-)
+File(GLOB Sources *.cpp)
 
-add_library(${This} STATIC ${Sources} ${Headers})
+ADD_LIBRARY(${This} STATIC ${Sources} ${Headers})
