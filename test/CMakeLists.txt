@@ -18,6 +18,7 @@ set(Sources
     MaxFreqStackTests.cpp
     SerializeAndDeserialzieBinaryTreeTests.cpp
     FindMedianInLargeFileTests.cpp
+    FileSystemNewTests.cpp
 )
 
 add_executable(${This} ${Sources})
