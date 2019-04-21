@@ -19,6 +19,7 @@ set(Sources
     SerializeAndDeserialzieBinaryTreeTests.cpp
     FindMedianInLargeFileTests.cpp
     FileSystemNewTests.cpp
+    AllOneDSTests.cpp
 )
 
 add_executable(${This} ${Sources})
