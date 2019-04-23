@@ -20,6 +20,7 @@ set(Sources
     FindMedianInLargeFileTests.cpp
     FileSystemNewTests.cpp
     AllOneDSTests.cpp
+    ReconstructItenaryTests.cpp
 )
 
 add_executable(${This} ${Sources})
@@ -29,6 +30,7 @@ target_link_libraries(${This} PUBLIC
     airbnb
     twitter
     amazon
+    linkedin
 )
 
 add_test(
