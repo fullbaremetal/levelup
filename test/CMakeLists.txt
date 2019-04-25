@@ -21,6 +21,7 @@ set(Sources
     FileSystemNewTests.cpp
     AllOneDSTests.cpp
     ReconstructItenaryTests.cpp
+    AutoCompleteSystemV2Tests.cpp
 )
 
 add_executable(${This} ${Sources})
