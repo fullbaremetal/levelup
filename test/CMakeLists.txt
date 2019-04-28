@@ -22,6 +22,7 @@ set(Sources
     AllOneDSTests.cpp
     ReconstructItenaryTests.cpp
     AutoCompleteSystemV2Tests.cpp
+    LFUTests.cpp
 )
 
 add_executable(${This} ${Sources})
