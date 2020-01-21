@@ -23,6 +23,7 @@ set(Sources
     ReconstructItenaryTests.cpp
     AutoCompleteSystemV2Tests.cpp
     LFUTests.cpp
+    ContainerWithMostWaterTests.cpp
 )
 
 add_executable(${This} ${Sources})
@@ -33,6 +34,7 @@ target_link_libraries(${This} PUBLIC
     twitter
     amazon
     linkedin
+    google
 )
 
 add_test(
